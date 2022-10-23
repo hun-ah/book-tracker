@@ -1,0 +1,447 @@
+* {
+   box-sizing: border-box;
+   list-style: none;
+   margin: 0;
+   font-family: 'Inter', sans-serif;
+}
+
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+   outline: none;
+}
+
+html,
+body {
+   margin: 0;
+   background-color: rgb(99, 157, 183);
+}
+
+/* ------------- ANIMATIONS ------------- */
+
+@keyframes MoveUpDown {
+
+   0%,
+   100% {
+      bottom: 0;
+   }
+
+   50% {
+      bottom: 30px;
+   }
+}
+
+@keyframes MoveUpDown2 {
+
+   0%,
+   100% {
+      bottom: 0px;
+   }
+
+   50% {
+      bottom: 10px;
+   }
+}
+
+@keyframes fadeOut {
+   from {
+      opacity: 1;
+   }
+
+   to {
+      opacity: 0;
+   }
+}
+
+@keyframes fadeIn {
+   from {
+      opacity: 0;
+   }
+
+   to {
+      opacity: 1;
+   }
+}
+
+/* ------------- PAGE CONTENTS (HIDDEN BY DEFAULT) ------------- */
+
+.page-container {
+   display: none;
+   text-align: left;
+   width: 1003px;
+   height: 100vh;
+   margin: 0px auto;
+   /* REMOVE WHEN DONE CSS */
+   /* display: flex; */
+   flex-direction: row;
+   gap: 123px;
+}
+
+.section1 {
+   width: 440px;
+   height: 512px;
+   margin-top: 60px;
+}
+
+.section2 {
+   background-color: #5690A7;
+   border-radius: 40px;
+   width: 440px;
+   height: 575px;
+   margin-top: 80px;
+}
+
+.book-icon img {
+   height: 110px;
+   width: 160px;
+   animation: MoveUpDown2 1.4s linear infinite;
+   position: relative;
+   left: -5%;
+   margin-top: 10px;
+}
+
+h1 {
+   font-family: 'Poppins', sans-serif;
+   font-weight: 900;
+   font-size: 92px;
+   line-height: 75px;
+   color: white;
+   margin-top: 15px;
+}
+
+h2 {
+   font-family: 'Courier Prime', monospace;
+   font-weight: 400;
+   font-size: 17px;
+   line-height: 23px;
+   color: white;
+   width: 327px;
+   height: 46px;
+   margin-top: 24px;
+}
+
+.ISBN {
+   color: white;
+   margin-top: 24px;
+   display: inline-block;
+}
+
+input {
+   width: 440px;
+   height: 50px;
+   padding: 8px 16px;
+   background: #5690A7;
+   border: none;
+   border-bottom: 1px solid white;
+   margin-top: 8px;
+   color: white;
+}
+
+::placeholder {
+   color: white;
+}
+
+.add {
+   width: 440px;
+   height: 52px;
+   color: white;
+   background: #335867;
+   border: none;
+   border-radius: 8px;
+   margin-top: 16px;
+   font-weight: 800;
+   font-size: 17px;
+   line-height: 22px;
+}
+
+.add:hover {
+   background-color: #233c46;
+   transition: 0.2s linear;
+}
+
+.book-title-container {
+   height: 350px;
+   margin: 32px 32px 0px 32px;
+}
+
+.book-title-heading {
+   font-weight: 900;
+   font-size: 19px;
+   height: 22px;
+   line-height: 22px;
+   color: white;
+}
+
+.book-list-container {
+   overflow: scroll;
+   margin-top: 20px;
+   margin-left: 12px;
+}
+
+ul {
+   height: 310px;
+   padding-left: 0;
+}
+
+li {
+   font-family: 'Courier Prime', monospace;
+   width: 330px;
+   color: white;
+   padding-top: 15px;
+   padding-bottom: 10px;
+   font-weight: 400;
+   font-size: 17px;
+   line-height: 23px;
+   border-bottom: 1px solid rgb(55, 96, 112, 0.7);
+}
+
+.button-container {
+   height: 150px;
+   display: flex;
+   flex-direction: column;
+   margin-top: 50px;
+}
+
+.button-container>button {
+   width: 376px;
+   height: 52px;
+   background: #335867;
+   color: white;
+   border: none;
+   border-radius: 8px;
+   font-weight: 800;
+   font-size: 17px;
+   line-height: 22px;
+   text-align: center;
+}
+
+.button-container>button+button {
+   margin-top: 8px;
+}
+
+.button-container>button:hover {
+   background-color: #233c46;
+   transition: 0.2s linear;
+}
+
+button {
+   border-radius: 5px;
+   cursor: pointer;
+}
+
+/* ------------- BOOK COVER/BOOK ------------- */
+
+.book-container {
+   height: 420px;
+   width: 290px;
+   transform: rotate(-30deg) skewX(10deg);
+   box-shadow: -50px 50px 50px rgba(0, 0, 0, 0.5);
+   cursor: pointer;
+   animation: MoveUpDown 1.9s linear infinite;
+   position: relative;
+   left: 40%;
+   margin-top: 150px;
+}
+
+.book-cover {
+   background-color: rgb(255, 255, 255);
+   height: 400px;
+   width: 300px;
+   border-left: 20px solid rgb(255, 0, 0);
+}
+
+.book-cover p {
+   font-size: 0.6rem;
+   text-align: left;
+}
+
+.text-container {
+   font-family: 'Courier Prime', monospace;
+   padding: 53px 20px;
+}
+
+.text-container>span {
+   font-family: 'Courier Prime', monospace;
+   font-size: 1.3rem;
+   display: block;
+   text-align: center;
+   padding-bottom: 15px;
+}
+
+.text-container span+span {
+   font-family: 'Courier Prime', monospace;
+   font-size: 0.7rem;
+}
+
+p {
+   font-family: 'Courier Prime', monospace;
+   padding-bottom: 10px;
+}
+
+/* ------------- BOOK SPINE ------------- */
+
+.book-spine-side {
+   height: 400px;
+   width: 20px;
+   background-color: rgb(181, 8, 8);
+   position: absolute;
+   top: 0;
+   left: 0;
+   transform: skewY(-45deg) translate(-20px, -10px);
+}
+
+/* ------------- BOOK BOTTOM (PAGES) ------------- */
+.book-bottom {
+   height: 20px;
+   width: 300px;
+   background-color: rgb(221, 218, 218);
+   transform: skewX(-45deg) translate(-42px, -12px);
+}
+
+/* ------------- MEDIA QUERIES ------------- */
+/* ------------- ADJUST BOOK SIZE/PLACEMENT ------------- */
+@media screen and (max-width: 1025px) {
+   .book-container {
+      left: 35%;
+      margin-top: 150px;
+   }
+}
+
+@media screen and (max-width: 800px) {
+   .book-container {
+      left: 30%;
+      margin-top: 150px;
+   }
+}
+
+
+@media screen and (max-width: 655px) {
+   .book-container {
+      left: 28%;
+      margin-top: 150px;
+   }
+}
+
+@media screen and (max-width: 645px) {
+   .book-container {
+      height: 350px;
+      width: 250px;
+   }
+
+   .book-cover {
+      background-color: rgb(255, 255, 255);
+      height: 350px;
+      width: 270px;
+      border-left: 15px solid rgb(255, 0, 0);
+   }
+
+   .book-spine-side {
+      height: 350px;
+      width: 15px;
+      transform: skewY(-45deg) translate(-15px, -7px);
+   }
+
+   .book-bottom {
+      height: 15px;
+      width: 270px;
+      transform: skewX(-45deg) translate(-26px, -4px);
+
+   }
+
+   .book-cover p {
+      font-size: 0.5rem;
+   }
+}
+
+@media screen and (max-width: 550px) {
+   .book-container {
+      height: 300px;
+      width: 250px;
+      left: 25%;
+      margin-top: 150px;
+   }
+
+   .book-cover {
+      background-color: rgb(255, 255, 255);
+      height: 320px;
+      width: 230px;
+      border-left: 10px solid rgb(255, 0, 0);
+   }
+
+   .book-spine-side {
+      height: 320px;
+      width: 10px;
+      transform: skewY(-45deg) translate(-10px, -5px);
+   }
+
+   .book-bottom {
+      height: 10px;
+      width: 230px;
+      transform: skewX(-45deg) translate(-24px, -9px);
+   }
+
+   .text-container>span {
+      font-size: 1.1rem;
+      display: block;
+      text-align: center;
+      padding-bottom: 10px;
+   }
+
+   .text-container span+span {
+      font-size: 0.6rem;
+   }
+
+   .book-cover p {
+      font-size: 0.44rem;
+   }
+
+   .text-container {
+      padding: 53px 20px;
+   }
+
+}
+
+/* ------------- RESPONSIVE PAGE ------------- */
+
+@media screen and (max-width: 1095px) {
+   .page-container {
+      flex-direction: column;
+      justify-content: space-around;
+      height: 100%;
+      width: 90%;
+      gap: 0;
+   }
+
+   .section2 {
+      background-color: #5690A7;
+      border-radius: 40px;
+      width: 100%;
+      height: 575px;
+   }
+
+   .book-title-heading {
+      margin-top: 32px;
+      display: inline-block;
+   }
+
+   .button-container {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+   }
+
+   .button-container .remove {
+      margin-right: 10px;
+   }
+
+   .button-container button+button {
+      margin-top: 0;
+      margin-left: 10px;
+   }
+
+   li {
+      width: 100%;
+   }
+
+}
