@@ -91,7 +91,8 @@ function toggleDisplay() {
 
    bookContainer.style.animation = 'fadeOut 0.5s forwards'
    bookContainer.style.cursor = 'default'
-   bookContainer.style.position = 'absolute'
+   // bookContainer.style.position = 'absolute'
+   bookContainer.style.display = 'none'
    pageContainer.style.display = 'flex'
    pageContainer.style.animation = 'fadeIn 1s forwards'
 }
