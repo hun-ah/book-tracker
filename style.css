@@ -15,7 +15,8 @@ button:focus {
 html,
 body {
    margin: 0;
-   background-color: rgb(99, 157, 183);
+   /* background-color: rgb(99, 157, 183); */
+   background-color: purple;
 }
 
 /* ------------- ANIMATIONS ------------- */
@@ -468,9 +469,5 @@ p {
    .button-container>button {
       font-size: 15px;
       line-height: 18px;
-   }
-
-   .book-cover p {
-      font-size: 0.25rem;
    }
 }
