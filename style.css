@@ -474,4 +474,8 @@ p {
    .remove-text {
       display: none;
    }
+
+   .text-container>p {
+      padding-top: 25px;
+   }
 }
