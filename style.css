@@ -470,12 +470,4 @@ p {
       font-size: 15px;
       line-height: 18px;
    }
-
-   .remove-text {
-      display: none;
-   }
-
-   .text-container>p {
-      padding-top: 8px;
-   }
 }
