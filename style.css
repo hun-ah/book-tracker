@@ -87,7 +87,7 @@ body {
    background-color: #5690A7;
    border-radius: 40px;
    width: 440px;
-   height: 575px;
+   /* height: 575px; */
    margin-top: 80px;
    margin-bottom: 50px;
 }
@@ -202,6 +202,7 @@ li {
    display: flex;
    flex-direction: column;
    margin-top: 50px;
+   margin-bottom: 25px;
 }
 
 .button-container>button {
@@ -468,5 +469,25 @@ p {
    .button-container>button {
       font-size: 15px;
       line-height: 18px;
+   }
+}
+
+@media screen and (device-aspect-ratio: 9/16) {
+
+   select,
+   textarea,
+   input[type="text"],
+   input[type="password"],
+   input[type="datetime"],
+   input[type="datetime-local"],
+   input[type="date"],
+   input[type="month"],
+   input[type="time"],
+   input[type="week"],
+   input[type="number"],
+   input[type="email"],
+   input[type="tel"],
+   input[type="url"] {
+      font-size: 16px;
    }
 }
