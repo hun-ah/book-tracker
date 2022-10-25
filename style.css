@@ -457,6 +457,10 @@ p {
       width: 337px;
    }
 
+   input {
+      font-size: 16px;
+   }
+
    .page-container {
       margin-left: 50px;
    }
