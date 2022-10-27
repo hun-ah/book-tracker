@@ -30,6 +30,10 @@ function that retrieves the info from the API. This is another step for me towar
 
 ## Optimizations:
 
+The first iteration of this website had a lot of issues with responsive styling. I decided to redo the whole website, as I was frustrated with the way it
+looked/was functioning on mobile and it didn't look very good. I spent two days refactoring the code, spending more time to understand 
+what I was doing with the CSS, mainly having a better grasp of flexbox and its behaviours.
+
 The main improvements I would make to this project would be to be able to click on a specific book you would like to delete from the list and remove
 that book. As of now, the user can only remove the last entered book on the list. If I have more time in the future, I want to ensure that all book titles
 will be capitalized. I noticed upon testing that a couple book titles did not have the first letter of every word in capitals ie. ('Daring Greatly'
@@ -39,5 +43,6 @@ doing this.
 
 ## Lessons Learned: 
 - creating an image out of pure CSS and animating it
+- better understanding of how flexbox works
 - getting information from an API and displaying it in the DOM
 - working with local storage (adding items, removing items, converting to an array from a string)
