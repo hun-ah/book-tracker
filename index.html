@@ -6,15 +6,14 @@
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <title>Book Tracker</title>
    <link rel="icon" href="favicon.ico">
-   <link rel="stylesheet" href="style.css">
+   <link rel="stylesheet" href="css/style.css">
+   <link rel="stylesheet" href="css/reset.css">
    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Courier+Prime&display=swap" rel="stylesheet">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;800;900&family=Poppins:wght@900&display=swap" rel="stylesheet">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@900&display=swap&family=Inter:wght@400;800;900&family=Courier+Prime&display=swap" rel="stylesheet">
 </head>
 <body>
+   <div class="book-container-container">
       <div class="book-container">
          <div class="book-cover">
             <div class="text-container">
@@ -27,30 +26,33 @@
          <div class="book-spine-side"></div>
          <div class="book-bottom"></div>
       </div>
+   </div>
 
    <section class="page-container">
       <section class="section1">
          <div class="book-icon">
-            <img src="book2.png" alt="book logo">
+            <img src="book3.png" alt="book logo">
          </div>
          <h1>BOOK TRACKER</h1>
          <h2>Search a book using its 10 or 13 digit ISBN number</h2>
          <span class="ISBN">ISBN #</span>
          <input type="text" placeholder="Enter the ISBN #">
-          <button class="add">Add Book</button>
+         <span class="example">For example: 9780140328721</span>
+         <button class="add">Add Book</button>
       </section>
 
       <section class="section2">
+         <div class="section2-container">
          <div class="book-title-container">
             <span class="book-title-heading">BOOK LIST</span>
+         </div>   
          <div class="book-list-container">
             <ul>
             </ul>
          </div>
          <div class="button-container">
             <button class="remove">Remove Last Book</button>
-         <button class="remove-all">Clear Book List</button>
-         
+            <button class="remove-all">Clear Book List</button>
          </div>
          </div>
       </section>

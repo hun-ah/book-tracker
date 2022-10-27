@@ -86,18 +86,12 @@ function removeAll() {
 }
 
 function toggleDisplay() {
-   let bookContainer = document.querySelector('.book-container')
+   let bookContainer = document.querySelector('.book-container-container')
    let pageContainer = document.querySelector('.page-container')
 
    bookContainer.style.animation = 'fadeOut 0.5s forwards'
    bookContainer.style.cursor = 'default'
-   // bookContainer.style.position = 'absolute'
    bookContainer.style.display = 'none'
    pageContainer.style.display = 'flex'
    pageContainer.style.animation = 'fadeIn 1s forwards'
 }
-
-// The Choice - 9781501130786
-// Fantastic Mr. Fox - 9780140328721
-// Gift of Imperfection - 9781616499600
-// Daring Greatly - 9781592408412
