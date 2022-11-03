@@ -24,7 +24,7 @@ The JavaScript was the most challenging part (as per usual). I had some challeng
 stored as srtings by default and I needed to convert them into an array. I was able to work through this issue by utilizing the JSON.parse() and 
 JSON.stringify() methods, which I had never used before. In this project, I made a point of creating functions for specific actions, such as: adding a 
 book, removing a book and clearing the book list. This makes the code look a lot cleaner/more readable than just writiing if/else statements inside of the
-function that retrieves the info from the API. This is another step for me towards writing code with OOP in mind.
+function that retrieves the info from the API. This is a step for me towards writing more thoughtful and organized code.
 
 ![website gif](https://media.giphy.com/media/rYGeEni4KG0TKWK1tz/giphy.gif)
 
