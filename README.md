@@ -10,20 +10,20 @@ This web app is built using Open Library API and utilizes local storage to store
 **Languages used: HTML, CSS, JavaScript**
 
 This project was incredibly fun to make! I wanted to start off with creating a book purely made from CSS and animate it to float. I decided to have the  
-book show on screen load and once clicked, would take you to the actual book tracker itself. I added the same floating book on a smaller scale to the
+book show on screen-load and once clicked, would take you to the actual book tracker itself. I added the same floating book on a smaller scale to the
 tracker itself, to act as a logo.
 
-The tracker uses Open Library API to retrieve the name of the book. I know it isn't necessarily practical to type in an ISBN number to find a book vs. 
-typing in a book name and logging the name but I wanted to showcase my ability to use an API. The book name is displayed on the screen after clicking the
+The tracker uses Open Library API to retrieve the name of the book. I know it isn't practical to type in an ISBN number to find a book vs. 
+typing in a book name and logging the name but I wanted to showcase the use of an API. The book name is displayed on the screen after clicking the
 'add book' button and is stored into local storage. The page can be revisited after closing the browser and the book names will still be displayed. 
 There are two additional buttons, 'remove last book' and 'clear book list', that allow the user to remove a book from their list or clear the list 
 altogether. The user can add an infinite number of books to their list. A scroll bar will appear once the list size becomes larger than the container
 holding the list.
 
-The JavaScript was the most challenging part (as per usual). I had some challenges working with the items being stored in local storage, since they are 
-stored as srtings by default and I needed to convert them into an array. I was able to work through this issue by utilizing the JSON.parse() and 
+The JavaScript was the most challenging part of this project. I had some challenges working with the items being stored in local storage, since they are 
+stored as strings by default and I needed to convert them into an array. I was able to work through this issue by utilizing the JSON.parse() and 
 JSON.stringify() methods, which I had never used before. In this project, I made a point of creating functions for specific actions, such as: adding a 
-book, removing a book and clearing the book list. This makes the code look a lot cleaner/more readable than just writiing if/else statements inside of the
+book, removing a book and clearing the book list. This makes the code look a lot cleaner/more readable than writing if/else statements inside of the
 function that retrieves the info from the API. This is a step for me towards writing more thoughtful and organized code.
 
 ![website gif](https://media.giphy.com/media/rYGeEni4KG0TKWK1tz/giphy.gif)
